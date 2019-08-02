@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spot the Thief!</title>
+    <style>
+      #board {
+        border: 1px solid black;
+        background: url("images/GameBackground.jpg");
+        width: 990px;
+        height: 590px;
+      }
+      .character {
+        background: url("images/Guest.jpg");
+        background-size: cover;
+        width: 170px;
+        height: 170px;
+        padding: 10px;
+        margin: 10px;
+        float: left;
+        display: none;
+      }
+
+      .thief {
+        background: url("images/Thief.jpg");
+        background-size: cover;
+      }
+      .hidden {
+        display: none;
+      }
+      .visible {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="button" value="Play" onclick="startGame()" />
+    <div id="board">
+      <div class="character">1</div>
+      <div class="character">2</div>
+      <div class="character">3</div>
+      <div class="character">4</div>
+      <div class="character">5</div>
+      <div class="character">6</div>
+    </div>
+    <p>
+      Please refresh the page before you play again to reduce chances of bugs!
+    </p>
+
+    <script src="game.js"></script>
+  </body>
+</html>
